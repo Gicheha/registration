@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding:0
+}
+html{
+    font-size: 62.65%;
+}
+body{
+    font-family: 'Raleway';
+    font-size: 1.3rem;
+    /*prevent excess scroll*/
+}
+#navigation{
+    /*critical sizing and position*/
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom:0;
+    left:0;
+    z-index: 0;
+    /*non essential*/
+    list-style: none;
+    background: #0D47A1;
+}
+/*navigation Menu-list Items*/
+.nav-item{
+    /*not very important styles*/
+    width: 25rem;
+    padding:1.0rem;
+    border-bottom: 0.01rem solid #000;
+    font-family: 'Roboto','sans-serif';
+}
+.nav-item a{
+    /*non essential*/
+    display: block;
+    padding: 0.75rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s,background 0.5s;
+    }
+.nav-item:hover{
+    background: black;
+}
+/*Site Wrapper:everything not navigation*/
+#wrapper{
+    /*essential rules*/
+    min-width:100%;
+    min-height:100%;
+    background-color:#F8F8F8;
+    position: relative;
+    top:0;
+    bottom:100%;
+    left:0;
+    z-index: 1;
+    /*non essential*/
+    padding: 0.75rem;
+    }
+#wrapper .container{
+    margin-top: 4.5rem;
+    margin-left: auto;
+}
+
+.nav-trigger{
+    position: absolute;
+    opacity:0; 
+}
+#toggle-label{
+    /*essential styling*/
+    content: '';
+    position: fixed;
+    top:1.75rem;
+    left:1.75rem;
+    z-index: 2;
+    /*non critical appearance*/
+    width:1.3rem;
+    height:1.3rem;
+    cursor: pointer;
+}
+#toggle-label:before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width:24px;
+    background: #8d8d8d;
+    left: 13px;
+    top: 18px;
+    box-shadow: 0 6px 0 #8d8d8d, 0 12px 0 #8d8d8d;
+}
+/*magic happens here*/
+.nav-trigger+#toggle-label,#wrapper{
+    transition: left 0.2s;
+}
+.nav-trigger:checked+#toggle-label{
+    left:27.5rem;
+}
+.nav-trigger:checked~#wrapper{
+    left:25.0rem;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}

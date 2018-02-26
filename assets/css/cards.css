@@ -1,0 +1,32 @@
+/*Styling for the card view page*/
+.card{
+    /*font-family:'Verdana',serif;*/
+    font-size: 1.75rem;
+    background-color:#FFFFFF;
+    width:60%;
+    padding:0.75rem;
+    height:10rem;
+    border:0.0001rem solid #FFFFFF;
+    border-bottom:0.25rem solid #BBB;
+    margin: auto;
+    margin-top:0.5rem;
+    border-radius:0.5rem;
+    /* overflow: hidden;*/
+}
+/*.card h4:first-letter{
+    float:left;
+    font-size:7.0rem;
+    text-transform: uppercase;
+    color: white;
+    background:cadetblue;
+    border:0.1rem solid cadetblue;
+    border-radius:0.25rem;
+    height:8rem;
+    width:7rem;
+}*/
+.card a{
+    color:cadetblue;
+    text-decoration: none;
+    margin: auto;
+}
+/*Styling for the paragraphed article view*/

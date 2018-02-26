@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Employee Registration</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0"/>
+    <link rel="stylesheet" href="assets/css/index.css"/>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway|Roboto;lang=en"/>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/navigation.js"></script>
+</head>
+
+<body>
+<!--navigation Bar-->
+<div class="header">
+    <ul>
+        <li><a id="sign-up">Sign Up</a></li>
+        <li><a id="log-in">Log In</a></li>
+    </ul>
+
+</div>
+
+<!--main body-->
+<div class="content">
+
+    <div class="secondary">
+        <div class="boxout1">
+            <h3>Electronic and gadgets</h3>
+            <p>
+                We have a large pool of electronic devices available, from portable gadgets such as speakers to desktop computers and Wi-Fi routers, as well as mobile phones from leading brands at a suitable price for all. Storage devices such as flash disks, hard disks memory cards as well as entertainment electronics such as TVs, Systems, Home Theatres, printers, cameras etc. You fancy it we got it just add it to your cart. Be a merchant. Sell all your appliances at the comfort of your home. Open an account and you are set to go.
+            </p>
+        </div>
+
+        <div class="boxout2">
+            <h3>Kitchen appliances</h3>
+            <p>
+                Technology got you covered in the kitchen. Why waste time going to the supermarket to look for a kitchen appliance while you can relax in the comfort of your house and shop by clicking away to your heart’s desire. All kitchen appliances are available. Gas cookers, electric heaters, blenders, and cutlery. Shop with us. Want to be a merchant? Sell all your kitchen appliances with us as well.
+            </p>
+        </div>
+
+        <div class="boxout3">
+            <h3>Clothes and accessories</h3>
+            <p>
+                Appearance is key in today’s society, sit back relax and find all your fashion needs with us. Both men and lady fashion needs are available. Casual and official, sexy and elegant or a little bit of both. Jewelry and fashion accessories, as well as make, are available. Browse through the various attires available and shop to your heart's desire.
+                Be a merchant- Do you sell clothes, join us in this adventure.
+            </p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="slide">
+            <img src="assets/pics/slider/pic1.png" alt="marketing-images-go-here"/>
+        </div>
+
+        <div class="content">
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--log in-->
+<div class="log-in">
+
+    <form method="post" action="application/Includes/login.php">
+        <input type="email" name="email"  placeholder="please enter your email" required/>
+        <br/>
+        <input type="password" name="password"  placeholder="please enter your password" required/>
+        <br/>
+        <input type="submit" name="submit" value="submit"/>
+    </form>
+
+</div>
+
+<!--sign up-->
+<div class="sign-up">
+    <form method="post" action="application/Includes/signup.php">
+        <input type="text" name="fName"  placeholder="please enter your full name" required/>
+        <br/>
+        <input type="text" name="lName"  placeholder="please enter your user name" required/>
+        <br/>
+        <input type="email" name="email"  placeholder="please enter your email" required/>
+        <br/>
+        <br/>
+        <input type="password" name="password"  placeholder="please enter your password" required/>
+        <br/>
+        <input type="submit" name="submit" value="SIGN-UP"/>
+
+    </form>
+</div>
+</body>
+</html>
